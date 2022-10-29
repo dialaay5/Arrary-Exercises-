@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>exercise 4</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+        function print(arr){
+            document.getElementById('result').innerHTML += arr 
+        }
+
+
+        function check_if_smaller(arr){
+            for(let index = 0; index< arr.length; index++){
+                if( index < 10 ){
+                arr[index] += 5
+            }
+        }
+        return arr
+   }   
+
+   print(check_if_smaller([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]))   
+    </script>
+    
+</body>
+</html>

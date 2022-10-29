@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>exercise 3</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+        function print(arr){
+            document.getElementById('result').innerHTML += arr 
+        }
+
+
+        function oddArr(arr){
+            let odd = 0
+            for(let i = 0; i< arr.length; i++){
+                if( arr[i] % 2 == 1){
+                odd++
+            }
+        }
+        if (odd == arr.length){
+            return 'odds'
+        }
+
+        else{
+            return 'not odds'
+        }
+   }   
+
+   print(oddArr([1, 3, 5, 300]))   
+    </script>
+    
+</body>
+</html>
